@@ -1,6 +1,13 @@
-function takeANumber (queue,customer) {
+/*function takeANumber (queue,customer) {
   queue.push(customer)
   return "Welcome, "+customer+`. You are number ${queue.length} in line.`
+}*/
+var customerNum=0
+
+function takeANumber(queue) {
+  customerNum+=1
+  queue.push(customerNum)
+  return "Welcome "+CustomerNum+` You are number ${queue.Length} in line.`
 }
   
 function nowServing(queue) {
