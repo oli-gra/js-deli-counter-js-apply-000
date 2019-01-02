@@ -2,7 +2,7 @@ function takeANumber (queue,customer) {
   queue.push(customer)
   return "Welcome, "+customer+`. You are number ${queue.length} in line.`
 }
-
+  
 function nowServing(queue) {
   if (queue.length>0) {
     var customer = queue.shift()
@@ -14,7 +14,7 @@ function currentLine(queue) {
   if (queue.length>0) {
     var customers=""
     for (let i=0;i<queue.length;i++) {
-      if (i+1<queue.length) {
+      if (i<queue.length-1) {
         customers+=`${i+1}. ${queue[i]}, `
       } else customers+=`${i+1}. ${queue[i]}`
     }
